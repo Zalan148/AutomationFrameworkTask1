@@ -1,0 +1,372 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.iAmOnTheTrelloLoginPage(StepDefs.java:322)\r\n\tat ✽.User is on the Trello login page(file:///C:/Users/zalan.wadood/IdeaProjects/TestAutomationFrameWorkWebApp/src/test/resources/features/LoginPage.feature:8)\r\n",
+              "duration": 5014000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User is on the Trello login page",
+            "match": {
+              "location": "org.trello.StepDefs.iAmOnTheTrelloLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T21:51:36.241Z",
+        "line": 10,
+        "name": "Able to login with correct credentials",
+        "description": "",
+        "id": "test-login-functionality;able-to-login-with-correct-credentials",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.teardown(StepDefs.java:57)\r\n",
+              "duration": 996400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "org.trello.StepDefs.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "User enters valid login credentials",
+            "match": {
+              "location": "org.trello.StepDefs.iEnterValidLoginCredentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "submit the details",
+            "match": {
+              "location": "org.trello.StepDefs.submitTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the Boards page is displayed",
+            "match": {
+              "location": "org.trello.StepDefs.theBoardsPageIsDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.iAmOnTheTrelloLoginPage(StepDefs.java:322)\r\n\tat ✽.User is on the Trello login page(file:///C:/Users/zalan.wadood/IdeaProjects/TestAutomationFrameWorkWebApp/src/test/resources/features/LoginPage.feature:8)\r\n",
+              "duration": 998900,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User is on the Trello login page",
+            "match": {
+              "location": "org.trello.StepDefs.iAmOnTheTrelloLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T21:51:36.442Z",
+        "line": 22,
+        "name": "Unable to login with invalid credentials",
+        "description": "",
+        "id": "test-login-functionality;unable-to-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.teardown(StepDefs.java:57)\r\n",
+              "duration": 998300,
+              "status": "failed"
+            },
+            "match": {
+              "location": "org.trello.StepDefs.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enters \"xyz\" and \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"xyz\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 22
+                }
+              ],
+              "location": "org.trello.StepDefs.userEntersUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1009400,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "submit the details",
+            "match": {
+              "location": "org.trello.StepDefs.submitTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "an error message will be displayed",
+            "match": {
+              "location": "org.trello.StepDefs.anErrorMessageWillBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.iAmOnTheTrelloLoginPage(StepDefs.java:322)\r\n\tat ✽.User is on the Trello login page(file:///C:/Users/zalan.wadood/IdeaProjects/TestAutomationFrameWorkWebApp/src/test/resources/features/LoginPage.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User is on the Trello login page",
+            "match": {
+              "location": "org.trello.StepDefs.iAmOnTheTrelloLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T21:51:36.522Z",
+        "line": 23,
+        "name": "Unable to login with invalid credentials",
+        "description": "",
+        "id": "test-login-functionality;unable-to-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.teardown(StepDefs.java:57)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "org.trello.StepDefs.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enters \"\" and \"abc\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"abc\"",
+                  "offset": 19
+                }
+              ],
+              "location": "org.trello.StepDefs.userEntersUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "submit the details",
+            "match": {
+              "location": "org.trello.StepDefs.submitTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "an error message will be displayed",
+            "match": {
+              "location": "org.trello.StepDefs.anErrorMessageWillBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.iAmOnTheTrelloLoginPage(StepDefs.java:322)\r\n\tat ✽.User is on the Trello login page(file:///C:/Users/zalan.wadood/IdeaProjects/TestAutomationFrameWorkWebApp/src/test/resources/features/LoginPage.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "User is on the Trello login page",
+            "match": {
+              "location": "org.trello.StepDefs.iAmOnTheTrelloLoginPage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-03-21T21:51:36.640Z",
+        "line": 24,
+        "name": "Unable to login with invalid credentials",
+        "description": "",
+        "id": "test-login-functionality;unable-to-login-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.trello.StepDefs.teardown(StepDefs.java:57)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "org.trello.StepDefs.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enters \"qwert\" and \"zxcv\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwert\"",
+                  "offset": 12
+                },
+                {
+                  "val": "\"zxcv\"",
+                  "offset": 24
+                }
+              ],
+              "location": "org.trello.StepDefs.userEntersUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "submit the details",
+            "match": {
+              "location": "org.trello.StepDefs.submitTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "an error message will be displayed",
+            "match": {
+              "location": "org.trello.StepDefs.anErrorMessageWillBeDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Login functionality",
+    "description": "  As a user of Trello,\n  I want to be able to enter my login credentials,\n  So that I can access the boards page",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 17119940700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I have logged in successfully",
+            "match": {
+              "location": "org.trello.StepDefs.iHaveLoggedInSuccessfully()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-02-07T17:22:52.968Z",
+        "line": 34,
+        "name": "Able to access Your Workspace menu options from top navigation bar",
+        "description": "",
+        "id": "test-top-trello-navigation-bar;able-to-access-your-workspace-menu-options-from-top-navigation-bar",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10093188500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I am on the Templates page",
+            "match": {
+              "location": "org.trello.StepDefs.iArriveAtTheTemplatesPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52213500,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I click on the Workspaces dropdown",
+            "match": {
+              "location": "org.trello.StepDefs.iClickOnTheWorkspacesDropdown()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5227113400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "my workspaces are displayed",
+            "match": {
+              "location": "org.trello.StepDefs.myWorkspacesAreDisplayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      }
+    ],
+    "name": "Test Top Trello Navigation Bar",
+    "description": "  As a user of Trello\n  I would like to be able to access the main features of Trello from the top navigation bar visible from any page\n  So that I can easily access the main features from a common location",
+    "id": "test-top-trello-navigation-bar",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/TopTrelloBar.feature",
+    "tags": []
+  }
+]

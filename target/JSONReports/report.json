@@ -1,0 +1,119 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-02-14T22:43:42.294Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6696977600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.BoardsPageSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 5982442100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.HomePageSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 6532273500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.TemplatePageSteps.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "S1",
+        "description": "",
+        "id": "xyz;s1",
+        "after": [
+          {
+            "result": {
+              "duration": 1135072000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.TemplatePageSteps.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 817591900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.HomePageSteps.teardown()"
+            }
+          },
+          {
+            "result": {
+              "duration": 808714800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.BoardsPageSteps.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2380500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on x page",
+            "match": {
+              "location": "org.trello.XYZ.iAmOnXPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I see that element",
+            "match": {
+              "location": "org.trello.XYZ.iSeeThatElement()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@zalantest"
+          }
+        ]
+      }
+    ],
+    "name": "XYZ",
+    "description": "",
+    "id": "xyz",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Zalan.feature",
+    "tags": [
+      {
+        "name": "@zalantest",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

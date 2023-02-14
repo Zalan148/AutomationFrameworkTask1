@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="32.523">
+    <testcase classname="Test Top Trello Navigation Bar" name="Able to access Your Workspace menu options from top navigation bar" time="32.494">
+        <system-out><![CDATA[Given I have logged in successfully.........................................passed
+And I am on the Templates page..............................................passed
+When I click on the Workspaces dropdown.....................................passed
+Then my workspaces are displayed............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

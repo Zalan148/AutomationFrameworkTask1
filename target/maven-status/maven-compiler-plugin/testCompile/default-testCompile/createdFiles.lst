@@ -1,0 +1,4 @@
+org\trello\BoardsPageSteps.class
+org\trello\LoginPageSteps.class
+testexecution\TestRunner.class
+org\trello\AppTest.class
