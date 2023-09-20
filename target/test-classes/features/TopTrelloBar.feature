@@ -6,30 +6,36 @@ Feature: Test Top Trello Navigation Bar
   Background:
     Given I have logged in successfully
 
+  @zalantest
   Scenario: Able to access More options from Atlassian from top navigation bar
     And I am on the Home page
     When I click the dots icon from the top navigation bar
     Then the More from Atlassian menu options are displayed
 
+  @zalantest
   Scenario: Able to select a search result in the top navigation bar
     And I am on the Templates page
     When I enter search criteria into the search box
     Then able to select a search result
 
+  @zalantest
   Scenario: Able to access Information menu options from top navigation bar
     And I arrive at Boards page
     When I click on the information icon
     Then information menu options are displayed
 
+  @zalantest
   Scenario: Able to access Notifications menu options from top navigation bar
     And I arrive at Boards page
     When I click on the Notifications icon
     Then notification menu options are displayed
 
+  @zalantest
   Scenario: Able to access Account menu options from top navigation bar
     And I am on the Home page
     When I click on the Account icon
     Then account menu options are displayed
+
   @zalantest
   Scenario: Able to access Your Workspace menu options from top navigation bar
     And I am on the Templates page

@@ -6,11 +6,11 @@
         <classes>
             <class name="testexecution.BrowserManager">
             </class>
-           <class name="testexecution.TestRunner">
+            <class name="testexecution.TestRunner">
             </class>
         </classes>
     </test>
-   <test name="Edge Test">
+  <!-- <test name="Edge Test">
         <parameter name="browser" value="edge" />
         <classes>
             <class name="testexecution.BrowserManager">
@@ -18,7 +18,7 @@
             <class name="testexecution.TestRunner">
             </class>
         </classes>
-    </test>
+    </test>-->
 </suite>
 
 

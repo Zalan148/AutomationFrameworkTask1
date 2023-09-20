@@ -1,6 +1,6 @@
 package org.trello.pages;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
+import org.trello.common.ElementPresenceWait;
 
 
 public class LoginPage {
@@ -14,7 +14,6 @@ public class LoginPage {
     By loginBtnInvalidDetails = By.id("login");
     By errorMessage = By.className("error-message");
 
-
     //constructor that will be called as soon as the object of the class is created
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -24,13 +23,21 @@ public class LoginPage {
         }
     }
 
+
     //perform corresponding actions after locating each web element
     public void enterUserName(String user){
         driver.findElement(userNameInput).sendKeys(user);
     }
-    public void clickLoginWithAltassian() { driver.findElement(loginWithAltassianBtn).click();}
+    public void clickLoginWithAltassian() {
+        WebElement loginButton = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(loginWithAltassianBtn));
+        loginButton.click();
+    }
     public void enterPassword(String pwd){
-        driver.findElement(pwdInput).sendKeys(pwd);
+
+        ElementPresenceWait.waitUntilTitleVisible(driver, "Log in to continue");
+        WebElement pwdBox = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(pwdInput));
+        pwdBox.click();
+        pwdBox.sendKeys(pwd);
     }
     public void clickLogin(){
         driver.findElement(loginBtn).click();
@@ -40,6 +47,15 @@ public class LoginPage {
     }
     public void displayErrorMess(){
         driver.findElement(errorMessage).isDisplayed();
+
+    }
+
+    public void enterPwdAfterInvalidUserName(String pwd){
+        ElementPresenceWait.waitUntilTitleVisible(driver, "Log in to Trello");
+        WebElement pwdBox = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(pwdInput));
+        pwdBox.click();
+        pwdBox.sendKeys(pwd);
+
     }
 
 }

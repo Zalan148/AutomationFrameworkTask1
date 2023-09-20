@@ -1,25 +1,25 @@
 package org.trello.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
+import org.openqa.selenium.WebElement;
+import org.trello.common.ElementPresenceWait;
 
 
 public class BoardsPage {
 
     WebDriver driver;
 
-    //locate each web element on the page
-    By homeLink = By.linkText("Home");
+    By addBoardTitle = By.xpath("//*[@data-testid='create-board-title-input']");
     By createNewBoard = By.xpath("//div[@class='board-tile mod-add']");
-    By selectBackground = By.xpath("//button[@title='Blue']");
+
+    By selectBackground = By.xpath("//button[@style='background-color: rgb(11, 80, 175); background-image: url(\"/assets/d106776cb297f000b1f4.svg\");']");
+
     By viewAllClosedBoards = By.xpath("//button[text()='View all closed boards']");
-
-    By existingBoard = By.xpath("//a[@style='background-color: rgb(0, 121, 191);']");
-
-    By navigateToTempPage = By.xpath("//span[@class='DD3DlImSMT6fgc'][contains(text(),'Templates')]");
-    By informationIconNavBar = By.xpath("//span[@aria-label='HelpIcon']");
-    By notificationsIconNavBar = By.xpath("//button[@data-testid='header-notifications-button']");
+    By existingBoard = By.xpath("//div[@class='board-tile-details-sub-container']");
     By boardsPageDisp = By.xpath("//button[contains(text(),'View all closed boards')]");
+    By createBoardBtn = By.xpath("//button[@data-testid='create-board-submit-button']");
+
+    By boardTitleRequired = By.xpath("//p[text()='Board title is required']");
 
     //constructor that will be called as soon as the object of the class is created
     public BoardsPage(WebDriver driver) {
@@ -27,14 +27,13 @@ public class BoardsPage {
     }
 
     //perform corresponding actions after locating each web element
-    public void navigateToHomePage(){
-        driver.findElement(homeLink).click();
-    }
     public void createNewBoard(){
-        driver.findElement(createNewBoard).click();
+        WebElement createNewBd = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(createNewBoard));
+        createNewBd.click();
     }
     public void setSelectBackground(){
-        driver.findElement(selectBackground).click();
+        WebElement backGd = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(selectBackground));
+        backGd.click();
     }
     public void setViewAllClosedBoards(){
         driver.findElement(viewAllClosedBoards).click();
@@ -44,18 +43,21 @@ public class BoardsPage {
         driver.findElement(existingBoard).click();
     }
 
-    public void navigateToTempPage() {
-        driver.findElement(navigateToTempPage).click();
-    }
-    public void setInformationIconNavBar(){
-        driver.findElement(informationIconNavBar).click();
-    }
-    public void setNotificationsIconNavBar(){
-        driver.findElement(notificationsIconNavBar).click();
-    }
     public void boardsPageDisplayed(){
-
-        driver.findElement(boardsPageDisp).isDisplayed();
+        ElementPresenceWait.waitUntilTitleVisible(driver, "Boards | Trello");
+        ElementPresenceWait.waitUntilVisible(driver, driver.findElement(boardsPageDisp));
     }
+
+    public void setAddBoardTitle(String title){
+        ElementPresenceWait.waitUntilVisibilityLocated(driver, boardTitleRequired);
+        WebElement l = ElementPresenceWait.waitUntilClickable(driver, driver.findElement(addBoardTitle));
+        l.click();
+        l.sendKeys(title);
+    }
+
+    public void clickCreateBoardBtn(){
+        driver.findElement(createBoardBtn).click();
+    }
+
 
 }

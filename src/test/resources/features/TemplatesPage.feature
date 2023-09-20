@@ -7,7 +7,7 @@ Feature: Test Templates Page features
     Given I have logged in successfully
     And   I am on the Templates page
 
-
+  @zalantest
     Scenario Outline: Templates by category are able to be accessed from the featured categories on the templates page
     When I select "<category>" from the featured categories
     Then the template gallery for "<category gallery>" is displayed
@@ -18,8 +18,7 @@ Feature: Test Templates Page features
       | Design          |Design templates |
 
 
-
-
+  @zalantest
   Scenario Outline: Templates by category are able to be accessed from the left menu on the templates page
       When I select "<category>" from the left hand side menu
       Then the template gallery for "<category gallery>" is displayed

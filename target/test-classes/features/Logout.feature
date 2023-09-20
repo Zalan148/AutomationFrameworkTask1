@@ -3,7 +3,7 @@ Feature: Test Logout functionality
   As a user of Trello
   I would like to be able to logout of Trello
   So that nobody else can access my account
-
+  @zalantest
   Scenario: Able to logout successfully
     Given I have logged in successfully
     And I am on the Home page

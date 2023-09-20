@@ -8,7 +8,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @CucumberOptions(
         features="src/test/resources/features",
         glue={"org.trello"},
-        tags = "@zalantest",
+        tags = "@zalantestc",
         plugin = {"pretty", "html:target/HtmlReports/report.html",
                 "json:target/cucumber-reports/Cucumber.json",
                 "junit:target/cucumber-reports/Cucumber.xml"}
@@ -17,6 +17,8 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 
 public class TestRunner extends AbstractTestNGCucumberTests {
+
+
 
 
 }

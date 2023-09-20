@@ -1,86 +1,100 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 6,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
+        "start_timestamp": "2023-09-20T21:39:58.222Z",
+        "before": [
           {
             "result": {
-              "duration": 17119940700,
+              "duration": 8234552800,
               "status": "passed"
             },
-            "line": 7,
-            "name": "I have logged in successfully",
             "match": {
-              "location": "org.trello.StepDefs.iHaveLoggedInSuccessfully()"
-            },
-            "keyword": "Given "
+              "location": "org.trello.Hooks.setup()"
+            }
           }
-        ]
-      },
-      {
-        "start_timestamp": "2023-02-07T17:22:52.968Z",
-        "line": 34,
-        "name": "Able to access Your Workspace menu options from top navigation bar",
+        ],
+        "line": 16,
+        "name": "An error message will be displayed with correct credentials (failed test)",
         "description": "",
-        "id": "test-top-trello-navigation-bar;able-to-access-your-workspace-menu-options-from-top-navigation-bar",
+        "id": "test-login-functionality;an-error-message-will-be-displayed-with-correct-credentials-(failed-test)",
+        "after": [
+          {
+            "result": {
+              "duration": 370179700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "org.trello.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 10093188500,
+              "duration": 6452300,
               "status": "passed"
             },
-            "line": 35,
-            "name": "I am on the Templates page",
+            "line": 17,
+            "name": "I am on the Trello login page",
             "match": {
-              "location": "org.trello.StepDefs.iArriveAtTheTemplatesPage()"
+              "location": "org.trello.StepDefsLoginPage.iAmOnTheTrelloLoginPage()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 52213500,
+              "duration": 1835595000,
               "status": "passed"
             },
-            "line": 36,
-            "name": "I click on the Workspaces dropdown",
+            "line": 18,
+            "name": "I enter valid login credentials",
             "match": {
-              "location": "org.trello.StepDefs.iClickOnTheWorkspacesDropdown()"
+              "location": "org.trello.StepDefsLoginPage.iEnterValidLoginCredentials()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 5227113400,
+              "duration": 63153900,
               "status": "passed"
             },
-            "line": 37,
-            "name": "my workspaces are displayed",
+            "line": 19,
+            "name": "submit the details",
             "match": {
-              "location": "org.trello.StepDefs.myWorkspacesAreDisplayed()"
+              "location": "org.trello.StepDefsLoginPage.submitTheDetails()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\".error\\-message\"}\n  (Session info: chrome\u003d116.0.5845.188)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027ROQ-240\u0027, ip: \u0027192.168.0.3\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002718.0.1.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.188, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\\Users\\ZALANW~1\\AppData\\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56912}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}\nSession ID: 239fdb6733ce21153970194f8d8f78d2\n*** Element info: {Using\u003dclass name, value\u003derror-message}\r\n\tat java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)\r\n\tat org.openqa.selenium.By$ByClassName.findElement(By.java:389)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat org.trello.pages.LoginPage.displayErrorMess(LoginPage.java:49)\r\n\tat org.trello.StepDefsLoginPage.anErrorMessageWillBeDisplayed(StepDefsLoginPage.java:75)\r\n\tat ✽.an error message will be displayed(file:///C:/Users/ZalanWadood/Downloads/backup/backup/IdeaProjects/TestAutomationFrameWorkWebApp/src/test/resources/features/LoginPage.feature:20)\r\n",
+              "duration": 5065257500,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "an error message will be displayed",
+            "match": {
+              "location": "org.trello.StepDefsLoginPage.anErrorMessageWillBeDisplayed()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@zalantest"
+            "name": "@zalantestc"
           }
         ]
       }
     ],
-    "name": "Test Top Trello Navigation Bar",
-    "description": "  As a user of Trello\n  I would like to be able to access the main features of Trello from the top navigation bar visible from any page\n  So that I can easily access the main features from a common location",
-    "id": "test-top-trello-navigation-bar",
+    "name": "Test Login functionality",
+    "description": "  As a user of Trello,\n  I want to be able to enter my login credentials,\n  So that I can access the boards page",
+    "id": "test-login-functionality",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/TopTrelloBar.feature",
+    "uri": "file:src/test/resources/features/LoginPage.feature",
     "tags": []
   }
 ]
