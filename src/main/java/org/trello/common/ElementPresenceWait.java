@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+//slows execution down
 public class ElementPresenceWait {
     public static WebElement waitUntilClickable(WebDriver driver, WebElement element){
             WebDriverWait wait = new WebDriverWait(driver, 5000);
